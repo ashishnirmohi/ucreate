@@ -11,8 +11,8 @@
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
+	import org.testng.Assert;
+	import org.testng.annotations.AfterTest;
 	import org.testng.annotations.BeforeTest;
 	import org.testng.annotations.Test;
 	public class Permissions {
@@ -27,7 +27,7 @@ import org.testng.annotations.AfterTest;
 	
 	@Test (priority=0)
 	public void permissionlogin() throws Exception {
-	driver.navigate().to("https://uat-clientspace.herokuapp.com");
+	driver.navigate().to("https://");
 	driver.findElement(By.id("email")).sendKeys("settingud01@yopmail.com"); Thread.sleep(3000);
 	driver.findElement(By.id("password")).sendKeys("@Test1234"); Thread.sleep(3000);
 	driver.findElement(By.id("show-sent")).click();	Thread.sleep(2000);
